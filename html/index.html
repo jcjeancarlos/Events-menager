@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Events Manager</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <h1>Events Registration</h1>
+
+  <form id="eventForm">
+    <input type="text" id="title" placeholder="Title" required><br>
+    <input type="text" id="description" placeholder="Description" required><br>
+    <input type="datetime-local" id="datetime" required><br>
+    <button type="submit">Create Event</button>
+  </form>
+
+  <h2>Event List</h2>
+  <ul id="eventList"></ul>
+
+  <h2>Search Event by ID</h2>
+  <input type="number" id="searchId" placeholder="Event ID">
+  <button onclick="searchEvent()">Search</button>
+  <div id="searchResult"></div>
+  
+  <button id="clearEvents">Clear events</button>
+  
+  <script src="script.js" defer></script>
+</body>
+</html>

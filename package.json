@@ -1,0 +1,7 @@
+{
+    "name": "events-html5",
+  "version": "1.0.0",
+  "description": "Events simulation with HTML5 and JavaScript",
+  "author": "Jean Carlos",
+  "license": "MIT"
+}
