@@ -1,9 +1,22 @@
 # Events-menager
-solution to simulate a API
+Simulated REST API for managing event data using pure HTML, JavaScript and JSON. Designed to emulate API behavior without needing a server.
 
-# Event API
+## React + TypeScript Integration
 
-This is a simple REST API for managing events. You can add events, list them, retrieve an event by ID.
+To reinforce architectural thinking and front-end capabilities using React and TypeScript.  
+It consumes the core event data:
+
+- Component-based structure (`<EventList />`)
+- Strong typing with interfaces
+- Separation of concerns (data, presentation)
+- Easy scalability and modularity
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/jcjeancarlos/events-menager
+2. Open index.html in your browser.
 
 ## Features
 
@@ -19,35 +32,3 @@ This is a simple REST API for managing events. You can add events, list them, re
 - `GET /events` → List all events
 
 - `GET /events/:id` → Retrieve a single event by ID
-
-
-## How to Run
-
-```bash
-1- Clone the repository:
-
- bash
- git clone https://github.com/jcjeancarlos/events-menager  
-2- Open the index.html file directly in your browser.
-
-*** No need to install any dependencies or set up a backend. Everything works locally using HTML and JavaScript.***
-
--------------------------------------------------------------------------------------------
-
-## If I had more time, I would...
-
-- Worked on the back-end structure to ensure real usability
-
-- Added background processes for efficient notifications
-
-- Included unit and integration testing
-
-- Used a persistent database instead of in-memory storage
-
-- Documented the API using Swagger or similar tools
-
-- Scaling consideration: designed for horizontal scalability and infrastructure resilience
-
-## If this API had to serve 10,000 users per day:
-
-- To ensure performance and scalability, this project must to focuses on critical pillars such as Infrastructure, Horizontal Scalability, Database optimization, and the adoption of Efficient Programming language and Frameworks.
