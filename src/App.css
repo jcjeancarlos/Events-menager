@@ -1,62 +1,37 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+/* container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Pag body */
-body {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  background-color: #eef2f5;
-  color: #333;
-  padding: 40px;
-}
-
-/* Heads */
-h1, h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #2c3e50;
-}
-
-/* Central container */
-form, #searchResult {
-  background-color: #fff;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 10px;
-  max-width: 500px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-/* Inputs */
-input {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 15px;
-}
-
-/* Button */
+/* Buttons */
 button {
-  background-color: #3498db;
+  background-color: #2c97de;
   color: white;
   padding: 10px 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 8px;
   font-size: 15px;
-  transition: background-color 0.3s ease;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.25s;
 }
 
 button:hover {
   background-color: #2980b9;
+  border-color: #646cff;
 }
 
-/* Events list */
+button:focus,
+button:focus-visible {
+  outline: 3px auto -webkit-focus-ring-color;
+}
+
+/* Event List */
 #eventList {
   list-style: none;
   padding-left: 0;
@@ -73,8 +48,8 @@ button:hover {
   box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
 
-/* Search result */
+/* Search Result */
 #searchResult {
   font-size: 16px;
-  color: #34495e;
+  color: #5e3434;
 }

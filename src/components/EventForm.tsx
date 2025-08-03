@@ -13,13 +13,11 @@ interface EventData {
 }
 
 const EventForm: React.FC<EventFormProps> = ({ onCreateEvent }) => {
-  // Estados locais para os campos do formulário
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
 
-  // Função chamada ao clicar em "Create Event"
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -30,7 +28,7 @@ const EventForm: React.FC<EventFormProps> = ({ onCreateEvent }) => {
       time,
     };
 
-    onCreateEvent(newEvent); // envia para o App.tsx
+    onCreateEvent(newEvent);
     setTitle('');
     setDescription('');
     setDate('');
